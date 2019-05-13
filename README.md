@@ -35,6 +35,7 @@ KnowItAll’s core application is a streamlined search API of google and wiki re
 **Google/Wikipedia API**
 
 **Backend: MongoDB/Express**
+The user input data will be stored in a relational database. The search results of the API will not be stored, this choice was made to ensure speed of the app and ensure the most up to date search results are served.
 
 **Frontend: React/Node.js and D3 visualization library**
 
@@ -55,14 +56,19 @@ We worked through the MERN curriculum online and created a User Auth system foll
 ##### Day 2 - Sunday 5/12
 
 ##### Day 3 - Monday 5/13
-**Alissa** 
+
+###### Alissa 
 * I can work on building out some of the front end components. I was planning on starting with the login/signup page and the main index feed which will hold a list of previously asked questions and comments. 
 * I think another high priority is the google api page where people will be asking the questions. Did we decide on making this a separate page accessible via a button on the index page?  
 * Seems like we will need routes to the basic login page but also depends on whether or not we’re using a modal 
 
-**Brett**
+###### Aubrie
+
+###### Brett
 * Flesh out and implement necessary routes along with the accompanying payload. Test.  Need to finalize what the user login flow will be and which pages link to where.  Figure out how to get google API hooked up.
 * Link backend routes and Google API to as many frontend components as possible
+
+###### Nate
 ##### Day 4 - Tuesday 5/14
 
 ##### Day 5 - Wednesday 5/15
