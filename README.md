@@ -130,10 +130,10 @@ ui: {
 | location        | string    |                           |
 | created_at      | datetime  | not null                  |
 | updated_at      | datetime  | not null                  |
-* User has_many `Comments`, foreign_key: `user_id`
-* User has_many `Questions`, foreign_key: `user_id`
-* User has_many `Answers`, foreign_key: `user_id`
-* User has_many `Friends`, foreign_key: `user_id`
+* `User` has_many `Comments`, foreign_key: `user_id`
+* `User` has_many `Questions`, foreign_key: `user_id`
+* `User` has_many `Answers`, foreign_key: `user_id`
+* `User` has_many `Friends`, foreign_key: `user_id`
 
 #### Comments
 | column name  | data type | details               |
@@ -144,8 +144,8 @@ ui: {
 | question_id  | integer   | not null              |
 | created_at   | datetime  | not null              |
 | update_at    | datetime  | not null              |
-* Comments belongs_to `User`, foreign_key: `user_id`
-* Comments belongs_to `Question`, foreign_key: `question_id`
+* `Comment` belongs_to `User`, foreign_key: `user_id`
+* `Comment` belongs_to `Question`, foreign_key: `question_id`
 
 #### Questions
 | column name  | data type | details               |
@@ -155,9 +155,9 @@ ui: {
 | body         | text      | not null, indexed     |
 | created_at   | datetime  | not null              |
 | updated_at   | datetime  | not null              |
-* Question belongs_to `User`, foreign_key: `author_id`
-* Question has_many `Comments`, foreign_key: `question_id`
-* Question has_many `Answers`, foreign_key: `question_id`
+* `Question` belongs_to `User`, foreign_key: `author_id`
+* `Question` has_many `Comments`, foreign_key: `question_id`
+* `Question` has_many `Answers`, foreign_key: `question_id`
 
 #### Answers
 | column name  | data type | details               |
@@ -169,8 +169,8 @@ ui: {
 | winner       | boolean   | not null              |
 | created_at   | datetime  | not null              |
 | updated_at   | datetime  | not null              |
-* Answer belongs_to `User`, foreign_key: `user_id`
-* Answer belongs_to `Question`, foreign_key: `question_id`
+* `Answer` belongs_to `User`, foreign_key: `user_id`
+* `Answer` belongs_to `Question`, foreign_key: `question_id`
 
 
 
