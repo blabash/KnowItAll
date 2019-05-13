@@ -41,19 +41,19 @@ KnowItAll’s core application is a streamlined search API of google and wiki re
 ### Web Application
 The web application will need to facilitate user login and auth. The application will need multiple routes to facilitate the collection and presentation of data both from the database and connected APIs.
 
-##### Technical Challenges
+#### Technical Challenges
 Ensuring search queries are compatible with two APIs (Google Custom Search API & Wikipedia API). Ensuring returned results of each API are integrated into one response to the user. Testing for acceptable speed of processing and formatting API results, so as not to noticeably interrupt user experience.
 
 ### Backend: MongoDB/Express
 The user input data will be stored in a relational database. The search results of the API will not be stored, this choice was made to ensure speed of the app and ensure the most up to date search results are served.
 
-##### Technical Challenges
+#### Technical Challenges
 Connecting the Google API and Wikipedia API to the MongoDB Database (search query)
 
 ### Frontend: React/Node.js
 The app will have several visualizations, via the stats page and small visual icons on the user profile page. We will use Recharts a charting library built on react components. The visualizations utilized will be a straight angle pie chart, area chart, and a dot line chart. This app will also utilize an animation library, posed to create a animated that plays after each challenge.
 
-##### Technical Challenges
+#### Technical Challenges
 * Creating visualizations using Recharts
 * Fetching data
 * Creating animations using posed
