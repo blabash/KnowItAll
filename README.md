@@ -1,5 +1,5 @@
 # KnowItAll
-MERN stack project
+**MERN stack project**
 
 KnowItAll is an application that allows you to challenge your friends to see who’s right. 
 Users can see how they rank against friends, track challenges, and see fact challenges in their area.
