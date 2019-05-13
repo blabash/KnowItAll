@@ -172,6 +172,14 @@ ui: {
 * `Answer` belongs_to `User`, foreign_key: `user_id`
 * `Answer` belongs_to `Question`, foreign_key: `question_id`
 
-
+#### Friends
+| column name  | data type | details               |
+|--------------|-----------|-----------------------|
+| id           | integer   | not null, primary key |
+| user_id      | integer   | not null, indexed     |
+| friend_id    | integer   | not null              |
+| created_at   | datetime  | not null              |
+| updated_at   | datetime  | not null              |
+* `Friend` belongs_to `User`, foreign_key: `user_id`
 
 
